@@ -1,0 +1,96 @@
+#--------------------------------------------------------------------------------------------------
+# YAML File for Design Tool API
+#
+# Author - Nitin Magima
+# Date - 2024
+# Version - 1.0
+#--------------------------------------------------------------------------------------------------
+
+#==================================================================================================
+#
+# IMPORTANT - DISCLAIMER AND RIGHTS STATEMENT
+# This is a set of scripts written by the Financial Instruments Team at the International Research
+# Institute for Climate and Society (IRI) part of The Columbia Climate School, Columbia University
+# They are shared for educational purposes only.  Anyone who uses this code or its
+# functionality or structure, assumes full liability and should inform and credit IRI.
+#
+#==================================================================================================
+
+maprooms:
+    djibouti:
+      maproom: "djibouti"
+      country: "djibouti" #this is different from country as sometimes the season is included in this variable
+      target_season: "JAS" #this is different from season which is used for the API
+      mode:
+        - name: National
+          key: 0
+        - name: Regional
+          key: 1
+#        - name: District
+#          key: 2
+      season: "season1"
+      predictor: "pnep-v2"
+      predictand: "bad-years"
+      year: 2023
+      issue_month: [5,4,3]
+      freq: [15,35,40]
+      include_upcoming: "false"
+      design_tool: "https://iridl.ldeo.columbia.edu/fbfmaproom2/djibouti"
+      report: "https://google.com"
+      username: None
+      password: None
+      threshold_protocol: 0
+      need_valid_keys: False
+      admin1_list: None
+
+    djibouti-mam:
+      maproom: "djibouti-mam"
+      country: "djibouti" #this is different from country as sometimes the season is included in this variable
+      target_season: "MAM" #this is different from season below which is used for the API
+      mode:
+        - name: National
+          key: 0
+        - name: Regional
+          key: 1
+      #        - name: District
+      #          key: 2
+      season: "season1"
+      predictor: "pnep-v2"
+      predictand: "bad-years"
+      year: 2024
+      issue_month: [1,0]
+      freq: [ 10,30,40 ]
+      include_upcoming: "false"
+      design_tool: "https://iridl.ldeo.columbia.edu/fbfmaproom2/djibouti-mam"
+      report: "https://google.com"
+      username: None
+      password: None
+      threshold_protocol: 0
+      need_valid_keys: False
+      admin1_list: None
+
+    djibouti-ond:
+      maproom: "djibouti-ond"
+      country: "djibouti" #this is different from country as sometimes the season is included in this variable
+      target_season: "OND" #this is different from season below which is used for the API
+      mode:
+        - name: National
+          key: 0
+        - name: Regional
+          key: 1
+      #        - name: District
+      #          key: 2
+      season: "season1"
+      predictor: "pnep-2023"
+      predictand: "bad-years"
+      year: 2023
+      issue_month: [8]
+      freq: [ 15,35,40 ]
+      include_upcoming: "false"
+      design_tool: "https://iridl.ldeo.columbia.edu/fbfmaproom2/djibouti-ond"
+      report: "https://google.com"
+      username: None
+      password: None
+      threshold_protocol: 0
+      need_valid_keys: False
+      admin1_list: None
